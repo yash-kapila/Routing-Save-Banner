@@ -1,0 +1,17 @@
+<div class="tabs-container">
+    <div class="tabs-list">
+        <ul>
+            <li ng-repeat="tab in $ctrl.tabs">
+                <a ng-click="$ctrl.onClick(tab)" style="cursor: pointer"> {{tab.name}} </a>
+            </li>            
+        </ul>
+    </div>
+    <div class="save-container">
+        <button 
+            class="btn btn-info" 
+            ng-click="$ctrl.saveOrDecision()"
+            ng-hide="$ctrl.hideSaveDecisionButton()">
+            Save/Decision
+        </button>
+    </div>
+</div>

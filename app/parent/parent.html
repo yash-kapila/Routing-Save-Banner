@@ -1,0 +1,12 @@
+<div class="parent-container">
+    <div class="pull-left tabs-container">
+        <tabs
+            tabs="$ctrl.tabs"
+            save-or-decision="$ctrl.saveOrDecision()"
+            navigate-to="$ctrl.navigateTo(state)">
+        </tabs>
+    </div>
+    <div class="child-state-container pull-right">
+        <div ui-view></div>
+    </div>
+</div>

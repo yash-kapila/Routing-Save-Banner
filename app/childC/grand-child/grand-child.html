@@ -1,0 +1,12 @@
+<div class="grand-child-container">
+    <h4> Grand Child - Modify Facility </h4>
+    <input type="text" class="form-control" ng-model="$ctrl.inputGrandChild" ng-change="$ctrl.makeFormDirty()">
+
+    <div class="banner-container">
+        <div class="navigation-banner" ng-show="$ctrl.showNavigationBanner">
+            <span> This is the navigation banner. Should I navigate? </span>
+            <button class="btn btn-success" ng-click="$ctrl.navigateFromBanner(true)"> Yes </button>
+            <button class="btn btn-warning" ng-click="$ctrl.navigateFromBanner(false)"> No </button>
+        </div>
+    </div>
+</div>
